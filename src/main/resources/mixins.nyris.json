@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.skatric.nyris.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.nyris.refmap.json",
+  "mixins": [
+
+  ],
+  "client": [
+
+  ],
+  "minVersion": "0.8"
+}

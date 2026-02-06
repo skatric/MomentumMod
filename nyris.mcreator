@@ -1,0 +1,238 @@
+{
+  "mod_elements": [
+    {
+      "name": "GainMomentumByKilling",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gain_momentum_by_killing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/GainMomentumByKillingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GainMomentumByDamaging",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gain_momentum_by_damaging",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/GainMomentumByDamagingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LoseMomentumByDying",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lose_momentum_by_dying",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/LoseMomentumByDyingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MomentumTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "momentum_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/MomentumTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Momentum",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "momentum",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/command/MomentumCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "MomentumCommandGet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "momentum_command_get",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/MomentumCommandGetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MomentumCommandSet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "momentum_command_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/MomentumCommandSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MomentumCommandReset",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "momentum_command_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/skatric/nyris/procedures/MomentumCommandResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "momentum",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ENTITIES:minecraft:hostile": [
+      "EntityBlaze",
+      "EntityCaveSpider",
+      "EntityCreeper",
+      "EntityDragon",
+      "EntityDrowned",
+      "EntityElderGuardian",
+      "EntityEnderman",
+      "EntityEndermite",
+      "EntityEvoker",
+      "EntityGhast",
+      "EntityGiantZombie",
+      "EntityGuardian",
+      "EntityHoglin",
+      "EntityHusk",
+      "EntityIllusionIllager",
+      "EntityMagmaCube",
+      "EntityPhantom",
+      "EntityPiglin",
+      "EntityPiglinBrute",
+      "EntityPillager",
+      "EntityRavager",
+      "EntityShulker",
+      "EntitySilverfish",
+      "EntitySkeleton",
+      "EntitySkeletonHorse",
+      "EntitySlime",
+      "EntitySpider",
+      "EntityVex",
+      "EntityVindicator",
+      "EntityWarden",
+      "EntityWitch",
+      "EntityWither",
+      "EntityWitherSkeleton",
+      "EntityZoglin",
+      "EntityZombie",
+      "EntityZombieHorse",
+      "EntityZombieVillager",
+      "EntityPigZombie"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "nyris",
+    "modName": "nyris",
+    "version": "1.0.0",
+    "author": "Skatric",
+    "websiteURL": "skatric.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Made By Skatric",
+    "modElementsPackage": "net.skatric.nyris"
+  },
+  "mcreatorVersion": 202400452410
+}
